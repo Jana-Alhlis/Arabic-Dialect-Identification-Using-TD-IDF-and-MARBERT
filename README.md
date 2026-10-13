@@ -8,15 +8,15 @@ Arabic is characterized by a wide range of regional dialects that vary in vocabu
 
 This project compares two text classification approaches: a TF-IDF representation combined with Logistic Regression, and a fine-tuned MARBERT model. The objective is to evaluate whether contextual language representations provide better dialect classification performance than a traditional machine learning baseline.
 
-## Dataset and Preparation
 
-The experiment uses a dataset of **112,000 Arabic text records** distributed across **16 dialect categories**, covering regional varieties such as Saudi, Egyptian, Iraqi, and Moroccan Arabic, alongside Modern Standard Arabic.
-
-The preprocessing workflow includes:
-- Exploring the dataset and its label distribution.
-- Removing records with missing text or labels.
-- Normalizing Arabic text while retaining relevant dialectal characteristics.
-- Splitting the data into training and validation sets using an 85:15 stratified split.
+## Dataset
+- Dataset size: 112,000 records
+- Number of classes: 16 Arabic dialect categories
+- Input feature: Arabic text (sent)
+- Target label: Country/dialect label (country)
+- Source: Kaggle – Arabic Dialect Dataset (https://www.kaggle.com/code/ammarnassanalhajali/text-classification-arabic-dialect-getting-data/notebook)
+The dataset covers multiple Arabic dialects, including Saudi, Egyptian, Iraqi, Moroccan, and other regional varieties, in addition to Modern Standard Arabic (MSA).
+Preprocessing included removing missing text and labels, normalizing Arabic characters, and splitting the data into training and validation sets using an 85:15 ratio.
 
 ## Modeling Approach
 
